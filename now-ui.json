@@ -1,0 +1,38 @@
+{
+	"components": {
+	    "snc-mfg-favorite-locations": {
+	        "innerComponents": [],
+			"uiBuilder": {
+				"associatedTypes": ["global.core", "global.landing-page"],
+				"label": "MFG Favorites List",
+				"icon": "document-outline",
+				"description": "Favorites list",
+				"category": "primitives"
+			},
+			"properties": [
+				{
+					"name": "items",
+					"label": "Items",
+					"readOnly": false,
+					"required": false,
+					"defaultValue": []
+				}
+			],
+			"actions": [
+				{
+					"action": "CLICKED_FAVORITE",
+					"label": "Favorite Clicked",
+					"description": "Event dispatched when favorite is clicked.",
+					"payload": []
+				},
+				{
+					"action": "CLICKED_REMOVE",
+					"label": "Favorite Removed",
+					"description": "Event dispatched when remove button is clicked.",
+					"payload": []
+				}
+			]
+	    }
+	},
+	"scopeName": "x_snc_mfg_favori_0"
+}

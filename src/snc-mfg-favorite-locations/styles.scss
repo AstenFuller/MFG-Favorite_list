@@ -1,0 +1,37 @@
+@import '@servicenow/sass-kit/host';
+
+.mfg-favorite-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 7px;
+  margin: 0 -7px;
+  &:hover {
+    background-color: RGB($now-color--primary-0,0.35);
+  }
+  &.selected {
+    &:hover {
+      background-color: RGB($now-color--primary-0);
+    }
+    background-color: RGB($now-color--primary-0);
+    border-left: 0.25rem solid RGB($now-color--primary-1);
+    .mfg-favorite-item-label {
+      margin-left: -0.25rem;
+    }
+  }
+}
+
+.item-remove {
+  padding: 5px;
+  margin: -5px;
+  z-index: 5;
+  &:hover {
+    background-color: RGB($now-color--primary-0,0.35);
+  }
+}
+
+.mfg-clickable {
+  cursor: pointer;
+}
